@@ -58,41 +58,40 @@ else:
 
 
 	
-	df=athletics()
-	evn=df['Event'].unique()
+df=athletics()
+evn=df['Event'].unique()
 
-	with tab1:
 
-		c1,c2=st.columns(2)
-		#with c1:
-		st.markdown('###### Event result')
-		option = st.selectbox('',evn,key='event')
+	c1,c2=st.columns(2)
+	#with c1:
+	st.markdown('###### Event result')
+	option = st.selectbox('',evn,key='event')
 
-		st.write('Results For ', option)
+	st.write('Results For ', option)
 
-		ev=df[df['Event']==option]
-		ev=ev[['Name','Faculty','Department','Position']]
+	ev=df[df['Event']==option]
+	ev=ev[['Name','Faculty','Department','Position']]
 			
 			
-		bd=ev.style.set_properties(**{'background-color': 'black',
-				                   'color': 'white',
-				                   'border-color': 'Red'}).hide_index().set_caption(str(option)+' result')
+	bd=ev.style.set_properties(**{'background-color': 'black',
+				                  'color': 'white',
+				                  'border-color': 'Red'}).hide_index().set_caption(str(option)+' result')
 			
-		st.dataframe(ev)
-		#dfi.export(ev, 'Result.png')
+	st.dataframe(ev)
+	#dfi.export(ev, 'Result.png')
 			
-		#with open("Result.png", "rb") as file: btn = st.download_button(
-				     #label="Download Result",
-				     #data=file,
-				     #file_name="result.png",
-				     #mime="image/png"
-				   #)
-		st.write('---')	       
-		#with c2:
-		st.markdown('###### Leaderboard - Individual')
-		dpt=df[df['Department']!='']
-		dpt=dpt.groupby(['Name']).sum()['Points'].reset_index().sort_values(by='Points', ascending=False).head(10)
-		st.dataframe(dpt)
+	#with open("Result.png", "rb") as file: btn = st.download_button(
+				    #label="Download Result",
+				    #data=file,
+				    #file_name="result.png",
+				    #mime="image/png"
+				  #)
+	st.write('---')	       
+	#with c2:
+	st.markdown('###### Leaderboard - Individual')
+	dpt=df[df['Department']!='']
+	dpt=dpt.groupby(['Name']).sum()['Points'].reset_index().sort_values(by='Points', ascending=False).head(10)
+	st.dataframe(dpt)
 			
 
 		
