@@ -70,7 +70,7 @@ else:
 		st.markdown('###### Event result')
 		option = st.selectbox('',evn,key='event')
 
-		st.write('Results For ', option)
+		st.write('Results of ', option)
 
 		ev=df[df['Event']==option]
 		ev=ev[['Block','Position']]
