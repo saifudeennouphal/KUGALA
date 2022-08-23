@@ -44,61 +44,49 @@ st.markdown('#### Departmets Union Sports Club')
 
 
 
-st.write('---')
 
-c=check_password()
-
-if c==True:
-	
-	admin()
-
-else:
-	
 	
 
 
 	
-	tab1, tab2 = st.tabs(["Event Wise Result","Leader Board"])
+tab1, tab2 = st.tabs(["Event Wise Result","Leader Board"])
 
-	df=athletics()
-	evn=df['Event'].unique()
+df=athletics()
+evn=df['Event'].unique()
 
-	with tab1:
+with tab1:
 
-		c1,c2=st.columns(2)
-		#with c1:
-		st.markdown('###### Event result')
-		option = st.selectbox('',evn,key='event')
+	c1,c2=st.columns(2)
+	#with c1:
+	st.markdown('###### Event result')
+	option = st.selectbox('',evn,key='event')
 
-		st.write('Results of ', option)
+	st.write('Results of ', option)
 
-		ev=df[df['Event']==option]
-		ev=ev[['Block','Position']]
+	ev=df[df['Event']==option]
+	ev=ev[['Block','Position']]
 			
 			
-		bd=ev.style.set_properties(**{'background-color': 'black',
-				                   'color': 'white',
-				                   'border-color': 'Red'}).hide_index().set_caption(str(option)+' result')
+	
+	st.dataframe(ev)
+	#dfi.export(ev, 'Result.png')
 			
-		st.dataframe(ev)
-		#dfi.export(ev, 'Result.png')
-			
-		#with open("Result.png", "rb") as file: btn = st.download_button(
-				     #label="Download Result",
-				     #data=file,
-				     #file_name="result.png",
-				     #mime="image/png"
-				   #)
+	#with open("Result.png", "rb") as file: btn = st.download_button(
+				    #label="Download Result",
+				    #data=file,
+				    #file_name="result.png",
+				    #mime="image/png"
+				  #)
 		
 			
 
 		
-	with tab2:
+with tab2:
 	
 		
 			
-		st.markdown('###### Leaderboard - Block wise')
-		st.dataframe(df.groupby(['Block']).sum()['Point'].reset_index().sort_values(by='Point', ascending=False))
+	st.markdown('###### Leaderboard - Block wise')
+	st.dataframe(df.groupby(['Block']).sum()['Point'].reset_index().sort_values(by='Point', ascending=False))
 		
 		
 
