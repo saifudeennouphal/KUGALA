@@ -94,19 +94,13 @@ else:
 
 		
 	with tab2:
-		c1,c2=st.columns(2)
-		
-		with c1:
+	
 		
 			
-			st.markdown('###### Leaderboard - Faculty wise')
-			st.dataframe(df.groupby(['Faculty']).sum()['Points'].reset_index().sort_values(by='Points', ascending=False))
+		st.markdown('###### Leaderboard - BLock wise')
+		st.dataframe(df.groupby(['Block']).sum()['Point'].reset_index().sort_values(by='Point', ascending=False))
 		
-		with c2:
-			st.markdown('###### Leaderboard - Department wise')
-			dpt=df.groupby(['Department']).sum()['Points'].reset_index().sort_values(by='Points', ascending=False)
-			dpt=dpt.head(10)
-			st.dataframe(dpt[dpt['Department']!=''])
+		
 
 		
 		
