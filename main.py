@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-     page_title="ഓണാഘോഷം ",
+     page_title="ഓണാഘോഷം 2k22",
      page_icon="ð§",
      layout="wide",
      initial_sidebar_state="collapsed",
@@ -35,9 +35,9 @@ image= Image.open('logo.png')
 
 st.image(image)
 
-st.markdown('#  Campus olympics')
+st.markdown('#  ഓണാഘോഷം ')
 
-st.markdown('#### Departmets Union Sports Club')
+st.markdown('#### ഗവേഷക - ഡിപ്പാർട്മെന്റ്സ് യൂണിയൻ - 2022')
 
 
 
