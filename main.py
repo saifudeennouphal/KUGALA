@@ -73,7 +73,7 @@ else:
 		st.write('Results For ', option)
 
 		ev=df[df['Event']==option]
-		ev=ev[['Name','Faculty','Department','Position']]
+		ev=ev[['Event','Block','Position']]
 			
 			
 		bd=ev.style.set_properties(**{'background-color': 'black',
