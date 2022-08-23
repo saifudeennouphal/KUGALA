@@ -89,12 +89,7 @@ else:
 				     #file_name="result.png",
 				     #mime="image/png"
 				   #)
-		st.write('---')	       
-		#with c2:
-		st.markdown('###### Leaderboard - Individual')
-		dpt=df[df['Department']!='']
-		dpt=dpt.groupby(['Name']).sum()['Points'].reset_index().sort_values(by='Points', ascending=False).head(10)
-		st.dataframe(dpt)
+		
 			
 
 		
