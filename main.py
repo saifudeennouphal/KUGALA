@@ -104,10 +104,11 @@ with tab2:
 	
 				
 with st.sidebar.expander("Developers"):
+	st.markdown('#### [Mohammed Ijas S](https://www.instagram.com/ijas.21/)')
 	st.markdown('#### [Saifudheen](https://www.instagram.com/saif_udheen/)')
- 	#st.markdown('#### [Mohammed Ijas S](https://www.instagram.com/ijas.21/)')
 	st.markdown('#### [Prabin Raj K P](https://www.instagram.com/prabinraj.kp/)')
 	st.markdown('#### [Vijay Venkitesh](https://www.instagram.com/vijay_v_venkitesh/)')
+	
  	#st.write('##### Department of Futures Studies')
  	
      #st.image("https://static.streamlit.io/examples/dice.jpg")
