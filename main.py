@@ -35,9 +35,9 @@ image= Image.open('newlogo1.png')
 
 st.image(image)
 
-image2= Image.open('SFI logo.png')
+#image2= Image.open('SFI logo.png')
 
-st.image(image2)
+#st.image(image2)
 
 #st.markdown('#  ഓണാഘോഷം ')
 
