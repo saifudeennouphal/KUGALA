@@ -31,7 +31,7 @@ from data import reg
 
 
 
-image= Image.open('newlogo1.png')
+image= Image.open('new logo update.png')
 
 st.image(image)
 
