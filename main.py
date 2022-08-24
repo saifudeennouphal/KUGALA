@@ -97,9 +97,9 @@ with tab2:
 	
 				
 with st.sidebar.expander("Developers"):
- 	st.markdown('#### [Prabin Raj K P](https://www.linkedin.com/in/prabinrajkp18/)')
- 	st.markdown('#### [Vijay V Venkitesh](https://www.linkedin.com/in/vijay-v-venkitesh-673177204/)')
- 	st.write('##### MSc Data Science \n Department of Futures Studies')
+ 	st.markdown('#### [Saifudheen](https://www.instagram.com/saif_udheen/)')
+ 	st.markdown('#### [Mohammed Ijas S](https://www.instagram.com/ijas.21/)')
+ 	st.write('##### Department of Futures Studies')
  	
      #st.image("https://static.streamlit.io/examples/dice.jpg")
 			
