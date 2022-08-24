@@ -110,7 +110,7 @@ with st.sidebar.expander("Developers"):
 	st.markdown('#### [Vijay Venkitesh](https://www.instagram.com/vijay_v_venkitesh/)')
 	st.markdown('#### [Mohammed Nibin](https://www.instagram.com/_nibin_/)')
 	
- 	st.write('##### Department of Futures Studies')
+ 	#st.write('##### Department of Futures Studies')
  	
      #st.image("https://static.streamlit.io/examples/dice.jpg")
 			
