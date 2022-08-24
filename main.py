@@ -31,17 +31,20 @@ from data import reg
 
 
 
-image= Image.open('newlogo1.png')
+#image= Image.open('newlogo1.png')
 
-st.image(image)
+#st.image(image)
 
-image2= Image.open('SFI logo.png')
+#image2= Image.open('SFI logo.png')
 
-st.image(image)
+#st.image(image)
 
 #st.markdown('#  ഓണാഘോഷം ')
 
 #st.markdown('### ഗവേഷക - ഡിപ്പാർട്മെന്റ്സ് യൂണിയൻ - 2022')
+
+images = ['newlogo1.png', 'SFI logo.png']
+st.image(images, use_column_width=True, caption="some generic text")
 
 
 
