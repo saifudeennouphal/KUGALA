@@ -108,6 +108,7 @@ with st.sidebar.expander("Developers"):
 	st.markdown('#### [Saifudheen](https://www.instagram.com/saif_udheen/)')
 	st.markdown('#### [Prabin Raj K P](https://www.instagram.com/prabinraj.kp/)')
 	st.markdown('#### [Vijay Venkitesh](https://www.instagram.com/vijay_v_venkitesh/)')
+	st.markdown('#### [Mohammed Nibin](https://www.instagram.com/_nibin_/)')
 	
  	#st.write('##### Department of Futures Studies')
  	
