@@ -61,7 +61,35 @@ tab1, tab2 , tab3 = st.tabs(["Event Wise Result","Leader Board","Gallery"])
 df=athletics()
 evn=df['Event'].unique()
 
+
+		
+			
+
+		
 with tab1:
+	
+		
+			
+	st.markdown('###### Leaderboard - Block wise')
+	st.dataframe(df.groupby(['Block']).sum()['Point'].reset_index().sort_values(by='Point', ascending=False))
+
+with tab2:
+	
+	img=['WhatsApp Image 2022-08-24 at 8.54.26 AM.jpeg','WhatsApp Image 2022-08-24 at 8.54.28 AM.jpeg','WhatsApp Image 2022-08-24 at 8.54.29 AM (1).jpeg',
+	     'WhatsApp Image 2022-08-24 at 8.54.29 AM.jpeg','WhatsApp Image 2022-08-24 at 8.54.30 AM (1).jpeg',
+	     'WhatsApp Image 2022-08-24 at 8.54.30 AM.jpeg','WhatsApp Image 2022-08-25 at 10.36.30 AM.jpeg',
+	     'WhatsApp Image 2022-08-25 at 10.36.33 AM.jpeg','WhatsApp Image 2022-08-25 at 10.36.35 AM.jpeg',
+	     'WhatsApp Image 2022-08-25 at 10.36.37 AM.jpeg','WhatsApp Image 2022-08-25 at 10.36.51 AM.jpeg',
+	     'WhatsApp Image 2022-08-25 at 10.37.14 AM.jpeg','WhatsApp Image 2022-08-25 at 10.37.16 AM.jpeg',
+	     'WhatsApp Image 2022-08-27 at 9.18.02 AM.jpeg','WhatsApp Image 2022-08-27 at 9.18.03 AM (1).jpeg',
+	     'WhatsApp Image 2022-08-27 at 9.18.04 AM (1).jpeg','WhatsApp Image 2022-08-27 at 9.18.04 AM.jpeg',
+	     'WhatsApp Image 2022-08-27 at 9.18.05 AM.jpeg',
+	     'WhatsApp Image 2022-08-27 at 9.18.06 AM.jpeg','WhatsApp Image 2022-08-27 at 9.18.07 AM (1).jpeg',
+	     'WhatsApp Image 2022-08-27 at 9.18.07 AM.jpeg','WhatsApp Image 2022-08-27 at 9.18.08 AM (1).jpeg',
+	     'WhatsApp Image 2022-08-27 at 9.18.08 AM.jpeg']
+	st.image(img)
+	
+with tab3:
 
 	c1,c2=st.columns(2)
 	#with c1:
@@ -84,32 +112,6 @@ with tab1:
 				    #file_name="result.png",
 				    #mime="image/png"
 				  #)
-		
-			
-
-		
-with tab2:
-	
-		
-			
-	st.markdown('###### Leaderboard - Block wise')
-	st.dataframe(df.groupby(['Block']).sum()['Point'].reset_index().sort_values(by='Point', ascending=False))
-
-with tab3:
-	
-	img=['WhatsApp Image 2022-08-24 at 8.54.26 AM.jpeg','WhatsApp Image 2022-08-24 at 8.54.28 AM.jpeg','WhatsApp Image 2022-08-24 at 8.54.29 AM (1).jpeg',
-	     'WhatsApp Image 2022-08-24 at 8.54.29 AM.jpeg','WhatsApp Image 2022-08-24 at 8.54.30 AM (1).jpeg',
-	     'WhatsApp Image 2022-08-24 at 8.54.30 AM.jpeg','WhatsApp Image 2022-08-25 at 10.36.30 AM.jpeg',
-	     'WhatsApp Image 2022-08-25 at 10.36.33 AM.jpeg','WhatsApp Image 2022-08-25 at 10.36.35 AM.jpeg',
-	     'WhatsApp Image 2022-08-25 at 10.36.37 AM.jpeg','WhatsApp Image 2022-08-25 at 10.36.51 AM.jpeg',
-	     'WhatsApp Image 2022-08-25 at 10.37.14 AM.jpeg','WhatsApp Image 2022-08-25 at 10.37.16 AM.jpeg',
-	     'WhatsApp Image 2022-08-27 at 9.18.02 AM.jpeg','WhatsApp Image 2022-08-27 at 9.18.03 AM (1).jpeg',
-	     'WhatsApp Image 2022-08-27 at 9.18.04 AM (1).jpeg','WhatsApp Image 2022-08-27 at 9.18.04 AM.jpeg',
-	     'WhatsApp Image 2022-08-27 at 9.18.05 AM.jpeg',
-	     'WhatsApp Image 2022-08-27 at 9.18.06 AM.jpeg','WhatsApp Image 2022-08-27 at 9.18.07 AM (1).jpeg',
-	     'WhatsApp Image 2022-08-27 at 9.18.07 AM.jpeg','WhatsApp Image 2022-08-27 at 9.18.08 AM (1).jpeg',
-	     'WhatsApp Image 2022-08-27 at 9.18.08 AM.jpeg']
-	st.image(img)
 		
 		
 
