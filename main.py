@@ -56,7 +56,7 @@ st.image(image)
 
 
 	
-tab1, tab2 , tab3 = st.tabs(["Event Wise Result","Leader Board","Gallery"])
+tab1, tab2 , tab3 = st.tabs(["Leader Board","Gallery","Event Wise Result"])
 
 df=athletics()
 evn=df['Event'].unique()
