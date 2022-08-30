@@ -75,7 +75,7 @@ with tab1:
 
 with tab2:
 	
-	img=['WhatsApp Image 2022-08-24 at 8.54.26 AM.jpeg','WhatsApp Image 2022-08-24 at 8.54.28 AM.jpeg','WhatsApp Image 2022-08-24 at 8.54.29 AM (1).jpeg',
+	img=['anashwara.jpeg','WhatsApp Image 2022-08-24 at 8.54.26 AM.jpeg','WhatsApp Image 2022-08-24 at 8.54.28 AM.jpeg','WhatsApp Image 2022-08-24 at 8.54.29 AM (1).jpeg',
 	     'WhatsApp Image 2022-08-24 at 8.54.29 AM.jpeg','WhatsApp Image 2022-08-24 at 8.54.30 AM (1).jpeg',
 	     'WhatsApp Image 2022-08-24 at 8.54.30 AM.jpeg','WhatsApp Image 2022-08-25 at 10.36.30 AM.jpeg',
 	     'WhatsApp Image 2022-08-25 at 10.36.33 AM.jpeg','WhatsApp Image 2022-08-25 at 10.36.35 AM.jpeg',
