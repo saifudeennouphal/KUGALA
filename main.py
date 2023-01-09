@@ -97,5 +97,12 @@ def register():
         ename = st.text_input('Enter your Name :', "")
         edept = st.text_input('Enter yout Department:' "")
         ephone = st.text_input('Enter your contact number :',"")
+    if eprogram == "Department Exhition":
+     edept = st.selectbox('Select Department :',departments)
+     eexhi = st.text_input('Shortly describe about your exhibition',"")
+     
+
+
+          
         
 register()      
