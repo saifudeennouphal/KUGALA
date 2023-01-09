@@ -56,10 +56,10 @@ with tab1:
 
 	c1,c2=st.columns(2)
 	#with c1:
-	st.markdown('###### Event result')
+	st.markdown('###### Event Details')
 	option = st.selectbox('',evn,key='event')
 
-	st.write('Results For ', option)
+	st.write('Details of ', option)
 
 	ev=df[df['Event']==option]
 	ev=ev[['Name','Faculty','Department','Position']]
