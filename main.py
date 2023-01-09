@@ -146,7 +146,7 @@ def register():
     
 with st.form('myform1'):
      register()
-     button=st.form_submit_button("submit")
+          button=st.form_submit_button("submit")
           
         
      
