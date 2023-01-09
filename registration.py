@@ -17,6 +17,7 @@ def register():
   cul_prog = ['SELECT', 'Solo Dance','Group Dance','Song(Solo)', 'Song(Group)', 'Fashion Show']
   spo_prog = ['SELECT', 'Carroms(Doubles)', '5s Football', 'Badminton(Mixed Doubles)']
   exi_prog = ['SELECT', 'Artwork Exhibition', 'Department Exhition']
+  art_exhi = ['SELECT', 'Craft', 'Spot caricature', 'Bottle Art' , 'Others'] 
   slct_evnt= st.selectbox('Select your Event',event_name)
   
   if event_name == "Cultural":
@@ -27,9 +28,35 @@ def register():
   
   if event_name == "Sports":
     sprogram = st.selectbox('Select your Sport ', spo_prog)
-    cname = st.text_input('Enter your Name :', "")
-    cdept = st.selectbox('Select your Department :',departments)
-    cphone = st.text_input('Enter your contact number :',"")
-    
-  
-    
+    if sprogram = "Carroms(Doubles)": 
+      sname = st.text_input('Enter your Name :', "")
+      sname2 = st.text_input('Enter the name of your team mate:',"")
+      sdept = st.selectbox('Select your Department :',departments)
+      sphone = st.text_input('Enter your contact number :',"")
+    if sprogram == "5s Football":
+      sname = st.text_input('Enter your Name :', "")
+      sname1 = st.text_input('Enter the name of your team mate(1)',"")
+      sname2 = st.text_input('Enter the name of your team mate(2)',"")
+      sname3 = st.text_input('Enter the name of your team mate(3)',"")
+      sname4 = st.text_input('Enter the name of your team mate(4)',"")
+      sdept = st.selectbox('Select your Department :',departments)
+      sphone = st.text_input('Enter your contact number :',"")
+    if sprogram = "Badminton(Mixed Doubles)":
+      sname = st.text_input('Enter your Name :', "")
+      sname2 = st.text_input('Enter the name of your team mate:',"")
+      sdept = st.selectbox('Select your Department :',departments)
+      sphone = st.text_input('Enter your contact number :',"")
+  if event_name == "Exhibiton":
+    eprogram = st.selectbox('Select your Programme ',exi_prog)
+    if eprogram = "Artwork Exhibition":
+      artwork= st.selectbox('Your presentation :',art_exhi)
+      if artwork != "Others":
+        ename = st.text_input('Enter your Name :', "")
+        edept = st.text_input('Enter yout Department:' "")
+        ephone = st.text_input('Enter your contact number :',"")
+      if artwork == "Others":
+        eother = st.text_input('Enter your art work :', "")
+        ename = st.text_input('Enter your Name :', "")
+        edept = st.text_input('Enter yout Department:' "")
+        ephone = st.text_input('Enter your contact number :',"")
+      
