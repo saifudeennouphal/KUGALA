@@ -1,4 +1,29 @@
 import streamlit as st
+
+st.set_page_config(
+     page_title="Campus Gala",
+     page_icon="ð§",
+     layout="wide",
+     menu_items={
+         'Get Help': 'https://instagram.com/keralauniversitydsu?igshid=YmMyMTA2M2Y=',
+         'Report a bug': "https://www.linkedin.com/in/saifudheen-nouphal-2b33a5144/",
+         'About': "# Departments union - Campus GALA web app"
+     }
+ )
+
+
+
+
+image= Image.open('LOGO-01.png')
+
+st.image(image)
+
+st.markdown('#  Campus GALA')
+
+st.markdown('#### Departmets Union | Researchers Union ')
+
+
+
 def register():
   
   event_name= ['SELECT','Cultural','Sports','Exhibiton']
