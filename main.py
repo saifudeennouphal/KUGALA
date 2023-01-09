@@ -52,7 +52,7 @@ def register():
                 'Department of Archaeology', 'Department of Economics', 'Department of History', 'Department of Islamic and West Asian Studies',
                 'Department of Political Science','Department of Sociology', 'Department of Commerce', 'Department of Education',
                 'Department of Music', 'Department of Law']
-  cul_prog = ['SELECT', 'Solo Dance','Group Dance','Song(Solo)', 'Song(Group)', 'Fashion Show']
+  cul_prog = ['SELECT', 'Solo Dance','Group Dance', 'Classical Dance' ,'Song(Solo)', 'Song(Group)', 'Classical Music','Musical Instruments', 'Fashion Show']
   spo_prog = ['SELECT', 'Carroms(Doubles)', '5s Football', 'Badminton(Mixed Doubles)']
   exi_prog = ['SELECT', 'Artwork Exhibition', 'Department Exhition']
   art_exhi = ['SELECT', 'Craft', 'Spot caricature', 'Bottle Art' , 'Others'] 
@@ -60,10 +60,48 @@ def register():
   
   if slct_evnt == "Cultural":
     cprogram = st.selectbox('Select your Programme ',cul_prog)
-    cname = st.text_input('Enter your Name :', "")
-    cdept = st.selectbox('Select your Department :',departments)
-    cphone = st.text_input('Enter your contact number :',"")
-  
+    if cprogram == "Solo Dance": 
+     cname = st.text_input('Enter your Name :', "")
+     cdept = st.selectbox('Select your Department :',departments)
+     cphone = st.text_input('Enter your contact number :',"")
+    if cprogram == "Group Dance":
+     cname = st.text_input('Enter your Name :', "")
+     cdept = st.selectbox('Select your Department :',departments)
+     cphone = st.text_input('Enter your contact number :',"")
+    if cprogram == "Classical Dance":
+     cname = st.text_input('Enter your Name :', "")
+     citem = st.text_input('Enter art form :', "")
+     cdept = st.selectbox('Select your Department :',departments)
+     cphone = st.text_input('Enter your contact number :',"")
+     
+    if cprogram == "Song(Solo)":
+     cname = st.text_input('Enter your Name :', "")
+     cdept = st.selectbox('Select your Department :',departments)
+     cphone = st.text_input('Enter your contact number :',"")
+     
+    if cprogram == "Song(Group)":
+     cname = st.text_input('Enter your Name :', "")
+     cdept = st.selectbox('Select your Department :',departments)
+     cphone = st.text_input('Enter your contact number :',"")
+     
+    if cprogram == "Classical Music":
+     cname = st.text_input('Enter your Name :', "")
+     cdept = st.selectbox('Select your Department :',departments)
+     cphone = st.text_input('Enter your contact number :',"")
+     
+    if cprogram == "Musical Instruments":
+     cname = st.text_input('Enter your Name :', "")
+     citem = st.text_input('Enter the instrument :', "")
+     cdept = st.selectbox('Select your Department :',departments)
+     cphone = st.text_input('Enter your contact number :',"")
+     
+    if cprogram == "Fashion Show":
+     cname = st.text_input('Enter your Name :', "")
+     cdept = st.selectbox('Select your Department :',departments)
+     cphone = st.text_input('Enter your contact number :',"")
+    
+     
+     
   if slct_evnt == "Sports":
     sprogram = st.selectbox('Select your Sport ', spo_prog)
     if sprogram == "Carroms(Doubles)": 
@@ -84,6 +122,10 @@ def register():
       sname2 = st.text_input('Enter the name of your team mate:',"")
       sdept = st.selectbox('Select your Department :',departments)
       sphone = st.text_input('Enter your contact number :',"")
+     
+     
+     
+     
   if slct_evnt == "Exhibiton":
     eprogram = st.selectbox('Select your Programme ',exi_prog)
     if eprogram == "Artwork Exhibition":
