@@ -95,16 +95,16 @@ def register():
         edept = st.selectbox('Select Department :',departments)
         eexhi = st.text_area('Shortly describe about your exhibition',"")
         
-    if slct_evnt == "SELECT":
+  if slct_evnt == "SELECT":
       st.markdown('####  Enter the event name to complete registration')
-    elif cprogram == "SELECT" or sprogram == "SELECT" or eprogram== "SELECT" :
+  elif cprogram == "SELECT" or sprogram == "SELECT" or eprogram== "SELECT" :
       
       st.markdown('####  Enter the programme name to complete registration')
     
-    elif  ephone=="" or sphone=="" or cphone=="":
+  elif  ephone=="" or sphone=="" or cphone=="":
       st.markdown('####  Enter your details to complete registration')
       
-    elif ephone!="" or sphone!="" or cphone!="" :
+  elif ephone!="" or sphone!="" or cphone!="" :
       button=st.form_submit_button('Submit')
     
     
