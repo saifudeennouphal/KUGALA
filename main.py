@@ -8,7 +8,7 @@ st.set_page_config(
      menu_items={
          'Get Help': 'https://instagram.com/keralauniversitydsu?igshid=YmMyMTA2M2Y=',
          'Report a bug': "https://www.linkedin.com/in/prabinrajkp18/",
-         'About': "# Departments union sports club - campus olympics web app"
+         'About': "# Departments union - campus GALA web app"
      }
  )
 
@@ -37,7 +37,7 @@ st.image(image)
 
 st.markdown('#  Campus GALA')
 
-st.markdown('#### Departmets Union ')
+st.markdown('#### Departmets Union | Researchers union ')
 
 
 
