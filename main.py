@@ -26,7 +26,7 @@ def register():
     cdept = st.selectbox('Select your Department :',departments)
     cphone = st.text_input('Enter your contact number :',"")
   
-  if event_name == "Sports":
+  if slct_evnt == "Sports":
     sprogram = st.selectbox('Select your Sport ', spo_prog)
     if sprogram == "Carroms(Doubles)": 
       sname = st.text_input('Enter your Name :', "")
@@ -46,7 +46,7 @@ def register():
       sname2 = st.text_input('Enter the name of your team mate:',"")
       sdept = st.selectbox('Select your Department :',departments)
       sphone = st.text_input('Enter your contact number :',"")
-  if event_name == "Exhibiton":
+  if slct_evnt == "Exhibiton":
     eprogram = st.selectbox('Select your Programme ',exi_prog)
     if eprogram == "Artwork Exhibition":
       artwork= st.selectbox('Your presentation :',art_exhi)
