@@ -59,4 +59,5 @@ def register():
         ename = st.text_input('Enter your Name :', "")
         edept = st.text_input('Enter yout Department:' "")
         ephone = st.text_input('Enter your contact number :',"")
-      
+        
+register()      
