@@ -22,7 +22,7 @@ import json
 import datetime
 from data import registration
 #from auth import check_password
-#from union import admin
+from union import admin
 from data import reg
 
 
