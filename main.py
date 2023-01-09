@@ -12,6 +12,27 @@ st.set_page_config(
  )
 
 
+import pandas as pd
+from data import athletics
+import dataframe_image as dfi
+#import gspread as gs
+from PIL import Image
+import json
+import datetime
+from data import registration
+#from auth import check_password
+from union import admin
+from data import reg
+from registration import register
+
+
+image= Image.open('LOGO-01.png')
+
+st.image(image)
+
+st.markdown('#  Campus GALA')
+
+st.markdown('#### Departmets Union | Researchers Union ')
 
 
 
