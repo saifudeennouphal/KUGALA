@@ -57,7 +57,7 @@ else:
 	
 
 
-	tab1, tab2,tab3 = st.tabs(["Event Wise Result","Leader Board","Registration"])
+	tab1, tab2,tab3 = st.tabs(["Event Details","Event Registration","Gallery"])
 
 	df=athletics()
 	evn=df['Event'].unique()
