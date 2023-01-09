@@ -20,7 +20,7 @@ def register():
   art_exhi = ['SELECT', 'Craft', 'Spot caricature', 'Bottle Art' , 'Others'] 
   slct_evnt= st.selectbox('Select your Event',event_name)
   
-  if event_name == "Cultural":
+  if slct_evnt == "Cultural":
     cprogram = st.selectbox('Select your Programme ',cul_prog)
     cname = st.text_input('Enter your Name :', "")
     cdept = st.selectbox('Select your Department :',departments)
