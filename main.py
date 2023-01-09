@@ -145,7 +145,7 @@ def register():
      
 register()
 
-with st.form('myform1'):
+with st.form('myform1',clear_on_submit=True):
      
      button=st.form_submit_button("submit")
           
