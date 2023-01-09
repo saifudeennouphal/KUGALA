@@ -43,7 +43,7 @@ st.markdown('#### Departmets Union | Researchers Union ')
 
 
 
-
+"""
 st.write('---')
 
 c=check_password()
@@ -53,86 +53,86 @@ if c==True:
 	admin()
 
 else:
-
+"""
 	
 	
 
 
-	tab1, tab2,tab3 = st.tabs(["Event Details","Event Registration","Gallery"])
+tab1, tab2,tab3 = st.tabs(["Event Details","Event Registration","Gallery"])
 
-	df=athletics()
-	evn=df['Event'].unique()
+df=athletics()
+evn=df['Event'].unique()
 
-	with tab1:
+with tab1:
 
-		c1,c2=st.columns(2)
-		#with c1:
-		st.markdown('###### Event result')
-		option = st.selectbox('',evn,key='event')
+	c1,c2=st.columns(2)
+	#with c1:
+	st.markdown('###### Event result')
+	option = st.selectbox('',evn,key='event')
 
-		st.write('Results For ', option)
+	st.write('Results For ', option)
 
-		ev=df[df['Event']==option]
-		ev=ev[['Name','Faculty','Department','Position']]
+	ev=df[df['Event']==option]
+	ev=ev[['Name','Faculty','Department','Position']]
 			
 			
-		bd=ev.style.set_properties(**{'background-color': 'black',
+	bd=ev.style.set_properties(**{'background-color': 'black',
 				                   'color': 'white',
 				                   'border-color': 'Red'}).hide_index().set_caption(str(option)+' result')
 			
-		st.dataframe(ev)
-		#dfi.export(ev, 'Result.png')
+	st.dataframe(ev)
+	#dfi.export(ev, 'Result.png')
 			
-		#with open("Result.png", "rb") as file: btn = st.download_button(
+	#with open("Result.png", "rb") as file: btn = st.download_button(
 				     #label="Download Result",
 				     #data=file,
 				     #file_name="result.png",
 				     #mime="image/png"
 				   #)
-		st.write('---')	       
-		#with c2:
-		st.markdown('###### Leaderboard - Individual')
-		dpt=df[df['Department']!='']
-		dpt=dpt.groupby(['Name']).sum()['Points'].reset_index().sort_values(by='Points', ascending=False).head(10)
-		st.dataframe(dpt)
+	st.write('---')	       
+	#with c2:
+	st.markdown('###### Leaderboard - Individual')
+	dpt=df[df['Department']!='']
+	dpt=dpt.groupby(['Name']).sum()['Points'].reset_index().sort_values(by='Points', ascending=False).head(10)
+	st.dataframe(dpt)
 			
 
 		
-	with tab2:
-		c1,c2=st.columns(2)
+with tab2:
+	c1,c2=st.columns(2)
 		
-		with c1:
+	with c1:
 		
 			
-			st.markdown('###### Leaderboard - Faculty wise')
-			st.dataframe(df.groupby(['Faculty']).sum()['Points'].reset_index().sort_values(by='Points', ascending=False))
+		st.markdown('###### Leaderboard - Faculty wise')
+		st.dataframe(df.groupby(['Faculty']).sum()['Points'].reset_index().sort_values(by='Points', ascending=False))
 		
-		with c2:
-			st.markdown('###### Leaderboard - Department wise')
-			dpt=df.groupby(['Department']).sum()['Points'].reset_index().sort_values(by='Points', ascending=False)
-			dpt=dpt.head(10)
-			st.dataframe(dpt[dpt['Department']!=''])
+	with c2:
+		st.markdown('###### Leaderboard - Department wise')
+		dpt=df.groupby(['Department']).sum()['Points'].reset_index().sort_values(by='Points', ascending=False)
+		dpt=dpt.head(10)
+		st.dataframe(dpt[dpt['Department']!=''])
 
 		
 		
 
 
-	with tab3:
+with tab3:
 
-		#name,mob,mail= None
-		with st.form("reg", clear_on_submit=True):
+	#name,mob,mail= None
+	with st.form("reg", clear_on_submit=True):
 			tb1,tb2=st.columns(2)
 		
-			#st.write('name')
-			with tb1:
-				name=st.text_input(label='Name')
-				mob=st.text_input(label='Phone')
-				mail=st.text_input(label='E-mail')
-			with tb2:
-				gen=st.selectbox('Gender',('Male','Female','Transgender'))
-				d = st.date_input( "Date of birt",datetime.date(1999, 1, 1))
+		#st.write('name')
+		with tb1:
+			name=st.text_input(label='Name')
+			mob=st.text_input(label='Phone')
+			mail=st.text_input(label='E-mail')
+		with tb2:
+			gen=st.selectbox('Gender',('Male','Female','Transgender'))
+			d = st.date_input( "Date of birt",datetime.date(1999, 1, 1))
 				
-				fac=st.selectbox('Faculty',
+			fac=st.selectbox('Faculty',
 				('Applied Science and Technology','Arts, Education & Music','IMk, Commerce & Law','OrientalStudies','Science','Social Science'))
 			
 			items = st.multiselect(
