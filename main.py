@@ -21,8 +21,8 @@ from PIL import Image
 import json
 import datetime
 from data import registration
-from auth import check_password
-from union import admin
+#from auth import check_password
+#from union import admin
 from data import reg
 
 
@@ -43,7 +43,7 @@ st.markdown('#### Departmets Union | Researchers Union ')
 
 
 
-"""
+
 st.write('---')
 
 c=check_password()
@@ -53,7 +53,7 @@ if c==True:
 	admin()
 
 else:
-"""
+
 	
 	
 
