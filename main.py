@@ -54,7 +54,7 @@ def register():
                 'Department of Music', 'Department of Law']
   cul_prog = ['SELECT', 'Solo Dance','Group Dance', 'Classical Dance' ,'Song(Solo)', 'Song(Group)', 'Classical Music','Musical Instruments', 'Fashion Show']
   spo_prog = ['SELECT', 'Carroms(Doubles)', '5s Football', 'Badminton(Mixed Doubles)']
-  exi_prog = ['SELECT', 'Artwork Exhibition', 'Department Exhition']
+  exi_prog = ['SELECT', 'Artwork Exhibition', 'Department Exhibition']
   art_exhi = ['SELECT', 'Craft', 'Spot caricature', 'Bottle Art' , 'Others'] 
   slct_evnt= st.selectbox('Select your Event',event_name)
   
@@ -139,7 +139,7 @@ def register():
         ename = st.text_input('Enter your Name :', "")
         edept = st.text_input('Enter yout Department:' "")
         ephone = st.text_input('Enter your contact number :',"")
-    if eprogram == "Department Exhition":
+    if eprogram == "Department Exhibition":
      edept = st.selectbox('Select Department :',departments)
      eexhi = st.text_input('Shortly describe about your exhibition',"")
      
