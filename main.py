@@ -43,7 +43,7 @@ st.markdown('#### Departmets Union | Researchers Union ')
 
 
 
-
+"""
 st.write('---')
 
 c=check_password()
@@ -53,6 +53,7 @@ if c==True:
 	admin()
 
 else:
+"""
 	
 	
 
