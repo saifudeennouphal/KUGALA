@@ -108,7 +108,7 @@ with tab2:
 
 
 with tab3:
-	register
+	register()
 
 	#name,mob,mail= None
 	#with st.form("reg", clear_on_submit=True):
