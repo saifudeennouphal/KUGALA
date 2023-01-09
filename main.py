@@ -124,40 +124,40 @@ with tab3:
 			tb1,tb2=st.columns(2)
 		
 		#st.write('name')
-		with tb1:
-			name=st.text_input(label='Name')
-			mob=st.text_input(label='Phone')
-			mail=st.text_input(label='E-mail')
-		with tb2:
-			gen=st.selectbox('Gender',('Male','Female','Transgender'))
-			d = st.date_input( "Date of birt",datetime.date(1999, 1, 1))
+	with tb1:
+		name=st.text_input(label='Name')
+		mob=st.text_input(label='Phone')
+		mail=st.text_input(label='E-mail')
+	with tb2:
+		gen=st.selectbox('Gender',('Male','Female','Transgender'))
+		d = st.date_input( "Date of birt",datetime.date(1999, 1, 1))
 				
-			fac=st.selectbox('Faculty',
+		fac=st.selectbox('Faculty',
 				('Applied Science and Technology','Arts, Education & Music','IMk, Commerce & Law','OrientalStudies','Science','Social Science'))
 			
-			items = st.multiselect(
+		items = st.multiselect(
 		 'Events (Maximum 3 events)',
 		 ['100 meter','200 meter','400 meter','1500 meter','Walking (3000 meter)','Shot put','Discus Throw','Javelin throw','Cricket Ball Throw'])
 			
 			
-			submit_button = st.form_submit_button(label='Submit')
+		submit_button = st.form_submit_button(label='Submit')
 		#st.write(len(name),len(mob),len(mail))
 		
 		
 			
-		if len(items)>3 and submit_button==True:
+	if len(items)>3 and submit_button==True:
 			st.error('Error: items cannot be more than 3')
 		#st.write(name,mob,mail,fac)
-		elif submit_button==True and ((len(name) and len(mob) and len(mail))<1)  :
+	elif submit_button==True and ((len(name) and len(mob) and len(mail))<1)  :
 			st.error("Error: all fields must be filled")
 			
-		elif submit_button==True:
-			st.success(str(name)+' Successfully registered for ' + str(items))
+	elif submit_button==True:
+		st.success(str(name)+' Successfully registered for ' + str(items))
 			
-			for event in items:
+		for event in items:
 				
-				lst=[name,mob,mail,gen,fac,str(d),event]
-				registration(lst)
+			lst=[name,mob,mail,gen,fac,str(d),event]
+			registration(lst)
 				
 with st.sidebar.expander("Developers"):
  	st.markdown('#### [Prabin Raj K P](https://www.linkedin.com/in/prabinrajkp18/)')
