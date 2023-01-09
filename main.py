@@ -37,7 +37,7 @@ st.image(image)
 
 st.markdown('#  Campus GALA')
 
-st.markdown('#### Departmets Union | Researchers union ')
+st.markdown('#### Departmets Union | Researchers Union ')
 
 
 
