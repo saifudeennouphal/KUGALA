@@ -14,14 +14,6 @@ st.set_page_config(
 
 
 
-image= Image.open('LOGO-01.png')
-
-st.image(image)
-
-st.markdown('#  Campus GALA')
-
-st.markdown('#### Departmets Union | Researchers Union ')
-
 
 
 def register():
