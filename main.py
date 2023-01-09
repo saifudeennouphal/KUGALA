@@ -143,10 +143,11 @@ def register():
      edept = st.selectbox('Select Department :',departments)
      eexhi = st.text_input('Shortly describe about your exhibition',"")
      
-    
+register()
+
 with st.form('myform1'):
-     register()
-          button=st.form_submit_button("submit")
+     
+     button=st.form_submit_button("submit")
           
         
      
