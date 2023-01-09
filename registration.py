@@ -1,6 +1,6 @@
 import streamlit as st
 def register():
-  with st.form('myform1'):
+  with st.form():
     event_name= ['SELECT','Cultural','Sports','Exhibiton']
     departments= ['', 'Department of Aquatic Biology and Fisheries', 'Department of Biochemistry','Department of Botany',
                 'Department of Chemistry', 'Department of Demography', 'Department of Geology', 'Department of Mathematics',
