@@ -96,7 +96,7 @@ def register():
           st.markdown('##### Please enter complete details!')  
     if slct_evnt == "Sports":
       sprogram = st.selectbox('Select your Sport ', spo_prog)
-      button=st.form_submit_button('Submit Event')
+      button=st.form_submit_button('Submit Programme')
       if button ==True and slct_evnt == "SELECT":
         st.markdown('##### Please select event!')        
       
