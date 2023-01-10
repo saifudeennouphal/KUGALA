@@ -41,42 +41,64 @@ def register():
         cname = st.text_input('Enter your Name :', "")
         cdept = st.selectbox('Select your Department :',departments)
         cphone = st.text_input('Enter your contact number :',"")
-        button=st.form_submit_button('Submit')
+        button=st.form_submit_button('Final Submission')
+        if button == True and cname=="" or cdept=="" or cphone=="":
+          st.markdown('##### Please enter complete details!')  
+          
       if cprogram == "Classical Dance":
         cname = st.text_input('Enter your Name :', "")
         citem = st.text_input('Enter art form :', "")
         cdept = st.selectbox('Select your Department :',departments)
         cphone = st.text_input('Enter your contact number :',"")
-        button=st.form_submit_button('Submit')
+        button=st.form_submit_button('Final Submission')
+        if button == True and cname=="" or cdept=="" or cphone=="":
+          st.markdown('##### Please enter complete details!')
+          
       if cprogram == "Song(Solo)":
         cname = st.text_input('Enter your Name :', "")
         cdept = st.selectbox('Select your Department :',departments)
         cphone = st.text_input('Enter your contact number :',"")
-        button=st.form_submit_button('Submit')
+        button=st.form_submit_button('Final Submission')
+        if button == True and cname=="" or cdept=="" or cphone=="":
+          st.markdown('##### Please enter complete details!')  
+          
       if cprogram == "Song(Group)":
         cname = st.text_input('Enter your Name :', "")
         cdept = st.selectbox('Select your Department :',departments)
         cphone = st.text_input('Enter your contact number :',"")
-        button=st.form_submit_button('Submit')
+        button=st.form_submit_button('Final Submission')
+        if button == True and cname=="" or cdept=="" or cphone=="":
+          st.markdown('##### Please enter complete details!')  
+          
       if cprogram == "Classical Music":
         cname = st.text_input('Enter your Name :', "")
         cdept = st.selectbox('Select your Department :',departments)
         cphone = st.text_input('Enter your contact number :',"")
-        button=st.form_submit_button('Submit')
+        button=st.form_submit_button('Final Submission')
+        if button == True and cname=="" or cdept=="" or cphone=="":
+          st.markdown('##### Please enter complete details!')  
+          
       if cprogram == "Musical Instruments":
         cname = st.text_input('Enter your Name :', "")
         citem = st.text_input('Enter the instrument :', "")
         cdept = st.selectbox('Select your Department :',departments)
         cphone = st.text_input('Enter your contact number :',"")
-        button=st.form_submit_button('Submit')
+        button=st.form_submit_button('Final Submission')
+        if button == True and cname=="" or cdept=="" or cphone=="":
+          st.markdown('##### Please enter complete details!')  
+          
       if cprogram == "Fashion Show":
         cname = st.text_input('Enter your Name :', "")
         cdept = st.selectbox('Select your Department :',departments)
         cphone = st.text_input('Enter your contact number :',"")
-        button=st.form_submit_button('Submit')
+        button=st.form_submit_button('Final Submission')
+        if button == True and cname=="" or cdept=="" or cphone=="":
+          st.markdown('##### Please enter complete details!')  
     if slct_evnt == "Sports":
       sprogram = st.selectbox('Select your Sport ', spo_prog)
-      button=st.form_submit_button('Submit')
+      button=st.form_submit_button('Submit Event')
+      if button ==True and slct_evnt == "SELECT":
+        st.markdown('##### Please select event!')        
       if sprogram == "Carroms(Doubles)": 
         sname = st.text_input('Enter your Name :', "")
         sname2 = st.text_input('Enter the name of your team mate:',"")
