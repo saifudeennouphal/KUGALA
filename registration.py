@@ -69,7 +69,7 @@ def register():
 
     if slct_evnt == "Sports":
       sprogram = st.selectbox('Select your Sport ', spo_prog)
-      button=st.form_submit_button('Next')
+      button=st.form_submit_button('Next ')
       if button ==True and slct_evnt == "SELECT":
         st.markdown('##### Please select event!')        
       
@@ -114,7 +114,7 @@ def register():
           
     if slct_evnt == "Exhibiton":
       eprogram = st.selectbox('Select your Programme ',exi_prog)
-      button=st.form_submit_button('Next')
+      button=st.form_submit_button('Next ')
       if eprogram == "Artwork Exhibition":
         artwork= st.selectbox('Your presentation :',art_exhi)
         ename = st.text_input('Enter your Name :', "")
