@@ -1,4 +1,27 @@
 import streamlit as st
+
+
+
+
+def registration(lst,sheet):
+
+	j=st.secrets['js']
+	res = json.loads(j)
+	with open('data.json', 'w') as f:
+		json.dump(res, f)
+
+	gc = gs.service_account(filename='data.json')
+	os.remove('data.json')
+	
+	sh = gc.open_by_url(st.secrets['reg'])
+	ws = sh.worksheet(sheet)
+	
+	ws.insert_row(lst,2)
+	
+	#return None
+  
+  
+
 def register():
   with st.form("registration1"):
     event_name= ['SELECT','Cultural','Sports','Exhibiton']
@@ -35,7 +58,11 @@ def register():
         cphone = st.text_input('Enter your contact number :',"")
         button=st.form_submit_button('Final Submission')
         if button == True and cname=="" or cdept=="" or cphone=="":
-          st.markdown('##### Please enter complete details!')  
+          st.markdown('##### Please enter complete details!')
+        else:
+          lst=[cname,cdept,cphone,'Solo dance']
+          registration(lst,'Sheet1')
+          
         
       if cprogram == "Group Dance":
         cname = st.text_input('Enter your Name :', "")
@@ -117,13 +144,19 @@ def register():
         sname4 = st.text_input('Enter the name of your team mate(4)',"")
         sdept = st.selectbox('Select your Department :',departments)
         sphone = st.text_input('Enter your contact number :',"")
-        button=st.form_submit_button('Submit')
+        button=st.form_submit_button('Final Submission')
+        if button == True and sname=="" or sdept=="" or sphone=="":
+          st.markdown('##### Please enter complete details!')  
+          
       if sprogram == "Badminton(Mixed Doubles)":
         sname = st.text_input('Enter your Name :', "")
         sname2 = st.text_input('Enter the name of your team mate:',"")
         sdept = st.selectbox('Select your Department :',departments)
         sphone = st.text_input('Enter your contact number :',"")
-        button=st.form_submit_button('Submit')
+        button=st.form_submit_button('Final Submission')
+        if button == True and sname=="" or sdept=="" or sphone=="":
+          st.markdown('##### Please enter complete details!')  
+          
     if slct_evnt == "Exhibiton":
       eprogram = st.selectbox('Select your Programme ',exi_prog)
       button=st.form_submit_button('Submit')
