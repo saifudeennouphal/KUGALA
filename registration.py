@@ -21,7 +21,7 @@ def register():
     
     slct_evnt= st.selectbox('Select your Event',event_name)
     if slct_evnt != "SELECT"
-    button=st.form_submit_button('click')
+      button=st.form_submit_button('click')
     if slct_evnt == "Cultural":
       cprogram = st.selectbox('Select your Programme ',cul_prog)
       button=st.form_submit_button('Sdddubmit')
