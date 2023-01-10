@@ -133,8 +133,8 @@ def register():
         if button == True and edept=="" or eexhi=="" or ename=="" or eprogram=="SELECT" :
           st.markdown('##### Please enter complete details!')
         else:
+          st.markdowm('Hello',ename,'you have successfully registered..')
           lst=[ename,edept,eexhi,eprogram]
           registration(lst,'Sheet6')
-    
     
     
