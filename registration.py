@@ -57,7 +57,7 @@ def register():
       cphone = st.text_input('Enter your contact number :',"")
       citem = st.text_input('For classical dance/ Musical instruments please specify',"")
       button=st.form_submit_button('Submit')
-      if button == True and cname=="" or cdept=="" or cphone=="":
+      if button == True and cname=="" or cdept=="" or cphone=="" or citem=="SELECT":
         st.markdown('##### Please enter complete details!')
       else:
         lst=[cname,cdept,cphone,cprogram,citem]
@@ -87,13 +87,14 @@ def register():
         sname2 = st.text_input('Enter the name of your team mate(2)',"")
         sname3 = st.text_input('Enter the name of your team mate(3)',"")
         sname4 = st.text_input('Enter the name of your team mate(4)',"")
-        sdept = st.selectbox('Select your Department :',departments)
+	sname5 = st.text_input('Enter the name of your team mate(5)',"")
+	sname6 = st.text_input('Enter the name of your team mate(6)',"")
         sphone = st.text_input('Enter your contact number :',"")
         button=st.form_submit_button('Submit')
-        if button == True and sname=="" or sdept=="" or sphone=="":
+        if button == True and sname==""  or sphone=="":
           st.markdown('##### Please enter complete details!') 
         else:
-          lst=[sname,sname1,sname2,sname3,sname4,sdept,sphone,'5s Football']
+          lst=[sname,sname1,sname2,sname3,sname4,sname5,sname6,sdept,sphone,'5s Football']
           registration(lst,'Sheet3')
           
       if sprogram == "Badminton(Mixed Doubles)":
