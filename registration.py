@@ -94,7 +94,7 @@ def register():
         if button == True and sname==""  or sphone=="":
           st.markdown('##### Please enter complete details!') 
         else:
-          lst=[sname,sname1,sname2,sname3,sname4,sname5,sname6,sdept,sphone,'5s Football']
+          lst=[sname,sname1,sname2,sname3,sname4,sname5,sname6,sphone,'5s Football']
           registration(lst,'Sheet3')
           
       if sprogram == "Badminton(Mixed Doubles)":
