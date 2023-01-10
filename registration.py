@@ -135,22 +135,6 @@ def register():
         else:
           lst=[ename,edept,eexhi,eprogram]
           registration(lst,'Sheet6')
-        if button == True and sname=="" or sdept=="" or sphone=="" or eprogram=="SELECT":
-          st.markdown('##### Please enter complete details!')
-        else:
-          lst=[artwork,ename,edept,ephone,eothers]
-          registration(lst,'Sheet5')
-	
-      if eprogram == "Department Exhibition":
-        ename= st.text_input('Enter your Name:',"")
-        edept = st.selectbox('Select Department :',departments)
-        eexhi = st.text_area('Shortly describe about your exhibition',"")
-        button=st.form_submit_button('Submit')
-        if button == True and edept=="" or eexhi=="" or ename=="":
-          st.markdown('##### Please enter complete details!')
-        else:
-          lst=[ename,edept,eexhi,eprogram]
-          registration(lst,'Sheet6')
     
     
     
