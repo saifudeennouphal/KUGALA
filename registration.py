@@ -23,7 +23,7 @@ def register():
     button=st.form_submit_button('Submit')
     if slct_evnt == "Cultural":
       cprogram = st.selectbox('Select your Programme ',cul_prog)
-      button=st.form_submit_button('Submit')
+      button1=st.form_submit_button('Submit')
       if cprogram == "Solo Dance":
         cname = st.text_input('Enter your Name :', "")
         cdept = st.selectbox('Select your Department :',departments)
