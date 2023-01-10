@@ -129,7 +129,7 @@ def register():
    #   st.markdown('####  Enter your details to complete registration')
       
   #elif ephone!="" or sphone!="" or cphone!="" :
-  button=st.form_submit_button('Submit')
+  #button=st.form_submit_button('Submit')
     
     
     
