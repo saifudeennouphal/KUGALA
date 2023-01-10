@@ -60,7 +60,7 @@ def register():
       if button == True and cname=="" or cdept=="" or cphone=="" or citem=="SELECT" or cprogram=="SELECT":
         st.markdown('##### Please enter complete details!')
       else:
-        st.markdowm('Hello',cname,'you have successfully registered..')
+        st.markdowm('Hello you have successfully registered..')
         lst=[cname,cdept,cphone,cprogram,citem]
         registration(lst,'Sheet1')
 
@@ -79,7 +79,7 @@ def register():
         if button == True and sname=="" or sdept=="" or sphone=="" or sprogram=="SELECT":
           st.markdown('##### Please enter complete details!')  
         else:
-          st.markdowm('Hello',sname,'you have successfully registered..')
+          st.markdowm('Hello you have successfully registered..')
           lst=[sname,sname2,sdept,sphone,'Carroms']
           registration(lst,'Sheet2')
         
@@ -96,7 +96,7 @@ def register():
         if button == True and sname==""  or sphone=="" or sprogram=="SELECT":
           st.markdown('##### Please enter complete details!') 
         else:
-          st.markdowm('Hello',sname,'you have successfully registered..')
+          st.markdowm('Hello you have successfully registered..')
           lst=[sname,sname1,sname2,sname3,sname4,sname5,sname6,sphone,'5s Football']
           registration(lst,'Sheet3')
           
@@ -109,7 +109,7 @@ def register():
         if button == True and sname=="" or sdept=="" or sphone=="" or sprogram=="SELECT":
           st.markdown('##### Please enter complete details!')
         else:
-          st.markdowm('Hello',sname,'you have successfully registered..')
+          st.markdowm('Hello you have successfully registered..')
           lst=[sname,sname2,sdept,sphone,sprogram]
           registration(lst,'Sheet4')
           
@@ -126,7 +126,7 @@ def register():
         if button == True and ename=="" or edept=="" or ephone=="" or eprogram=="SELECT" or artwork=="SELECT":
           st.markdown('##### Please enter complete details!')
         else:
-          st.markdowm('Hello',ename,'you have successfully registered..')
+          st.markdowm('Hello you have successfully registered..')
           lst=[artwork,ename,edept,ephone,eothers]
           registration(lst,'Sheet5')
 	
@@ -138,7 +138,7 @@ def register():
         if button == True and edept=="" or eexhi=="" or ename=="" or eprogram=="SELECT" :
           st.markdown('##### Please enter complete details!')
         else:
-          st.markdowm('Hello',ename,'you have successfully registered..')
+          st.write('Hello you have successfully registered..')
           lst=[ename,edept,eexhi,eprogram]
           registration(lst,'Sheet6')
     
