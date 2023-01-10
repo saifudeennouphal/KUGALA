@@ -26,11 +26,17 @@ def register():
     if slct_evnt == "Cultural":
       cprogram = st.selectbox('Select your Programme ',cul_prog)
       button=st.form_submit_button('Submit Programme')
+      if button ==True and cprogram=="SELECT":
+        st.markdown('##### Please select the Programme!')  
+      
       if cprogram == "Solo Dance":
         cname = st.text_input('Enter your Name :', "")
         cdept = st.selectbox('Select your Department :',departments)
         cphone = st.text_input('Enter your contact number :',"")
-        button=st.form_submit_button('Submit')
+        button=st.form_submit_button('Final Submission')
+        if button == True and cname=="" or cdept=="" or cphone=="":
+          st.markdown('##### Please enter complete details!')  
+        
       if cprogram == "Group Dance":
         cname = st.text_input('Enter your Name :', "")
         cdept = st.selectbox('Select your Department :',departments)
