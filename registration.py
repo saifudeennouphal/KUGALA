@@ -99,12 +99,16 @@ def register():
       button=st.form_submit_button('Submit Event')
       if button ==True and slct_evnt == "SELECT":
         st.markdown('##### Please select event!')        
+      
       if sprogram == "Carroms(Doubles)": 
         sname = st.text_input('Enter your Name :', "")
         sname2 = st.text_input('Enter the name of your team mate:',"")
         sdept = st.selectbox('Select your Department :',departments)
         sphone = st.text_input('Enter your contact number :',"")
-        button=st.form_submit_button('Submit')
+        button=st.form_submit_button('Final Submission')
+        if button == True and sname=="" or sdept=="" or sphone=="":
+          st.markdown('##### Please enter complete details!')  
+        
       if sprogram == "5s Football":
         sname = st.text_input('Enter your Name :', "")
         sname1 = st.text_input('Enter the name of your team mate(1)',"")
