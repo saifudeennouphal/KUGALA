@@ -56,16 +56,16 @@ def register():
       if button ==True and cprogram=="SELECT":
         st.markdown('##### Please select the Programme!')
       else:
-	cname = st.text_input('Enter your Name :', "")
-	cdept = st.selectbox('Select your Department :',departments)
-	cphone = st.text_input('Enter your contact number :',"")
-	citem = st.text_input('For classical dance/ Musical instruments please specify',"")
-	button=st.form_submit_button('Submit')
-	if button == True and cname=="" or cdept=="" or cphone=="":
-	  st.markdown('##### Please enter complete details!')
-	else:
-	  lst=[cname,cdept,cphone,cprogram,citem]
-	  registration(lst,'Sheet1')
+        cname = st.text_input('Enter your Name :', "")
+        cdept = st.selectbox('Select your Department :',departments)
+        cphone = st.text_input('Enter your contact number :',"")
+        citem = st.text_input('For classical dance/ Musical instruments please specify',"")
+        button=st.form_submit_button('Submit')
+        if button == True and cname=="" or cdept=="" or cphone=="":
+          st.markdown('##### Please enter complete details!')
+        else:
+          lst=[cname,cdept,cphone,cprogram,citem]
+          registration(lst,'Sheet1')
 
     if slct_evnt == "Sports":
       sprogram = st.selectbox('Select your Sport ', spo_prog)
@@ -120,20 +120,20 @@ def register():
         ename = st.text_input('Enter your Name :', "")
         edept = st.text_input('Enter yout Department:' "")
         ephone = st.text_input('Enter your contact number :',"")
-	eothers = st.text_area('If others, Please specify')
+        eothers = st.text_area('If others, Please specify')
         button=st.form_submit_button('Submit')
-	if button == True and sname=="" or sdept=="" or sphone=="":
+        if button == True and sname=="" or sdept=="" or sphone=="":
           st.markdown('##### Please enter complete details!')
         else:
           lst=[artwork,ename,edept,ephone,eothers]
           registration(lst,'Sheet5')
 	
       if eprogram == "Department Exhibition":
-	ename= st.text_input('Enter your Name:',"")
+        ename= st.text_input('Enter your Name:',"")
         edept = st.selectbox('Select Department :',departments)
         eexhi = st.text_area('Shortly describe about your exhibition',"")
         button=st.form_submit_button('Submit')
-	if button == True and edept=="" or eexhi=="" or ename=="":
+        if button == True and edept=="" or eexhi=="" or ename=="":
           st.markdown('##### Please enter complete details!')
         else:
           lst=[ename,edept,eexhi,eprogram]
