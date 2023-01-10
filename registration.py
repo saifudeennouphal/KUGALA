@@ -87,8 +87,8 @@ def register():
         sname2 = st.text_input('Enter the name of your team mate(2)',"")
         sname3 = st.text_input('Enter the name of your team mate(3)',"")
         sname4 = st.text_input('Enter the name of your team mate(4)',"")
-	sname5 = st.text_input('Enter the name of your team mate(5)',"")
-	sname6 = st.text_input('Enter the name of your team mate(6)',"")
+        sname5 = st.text_input('Enter the name of your team mate(5)',"")
+        sname6 = st.text_input('Enter the name of your team mate(6)',"")
         sphone = st.text_input('Enter your contact number :',"")
         button=st.form_submit_button('Submit')
         if button == True and sname==""  or sphone=="":
@@ -135,7 +135,6 @@ def register():
         else:
           lst=[ename,edept,eexhi,eprogram]
           registration(lst,'Sheet6')
-
     
     
     
