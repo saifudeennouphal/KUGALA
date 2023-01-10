@@ -56,17 +56,17 @@ def register():
       if button ==True and cprogram=="SELECT":
         st.markdown('##### Please select the Programme!')
       else:
-        cname = st.text_input('Enter your Name :', "")
-        cdept = st.selectbox('Select your Department :',departments)
-        cphone = st.text_input('Enter your contact number :',"")
+	cname = st.text_input('Enter your Name :', "")
+	cdept = st.selectbox('Select your Department :',departments)
+	cphone = st.text_input('Enter your contact number :',"")
 	citem = st.text_input('For classical dance/ Musical instruments please specify',"")
-        button=st.form_submit_button('Submit')
-        if button == True and cname=="" or cdept=="" or cphone=="":
-          st.markdown('##### Please enter complete details!')
-        else:
-          lst=[cname,cdept,cphone,cprogram,citem]
-          registration(lst,'Sheet1')
-		
+	button=st.form_submit_button('Submit')
+	if button == True and cname=="" or cdept=="" or cphone=="":
+	  st.markdown('##### Please enter complete details!')
+	else:
+	  lst=[cname,cdept,cphone,cprogram,citem]
+	  registration(lst,'Sheet1')
+
     if slct_evnt == "Sports":
       sprogram = st.selectbox('Select your Sport ', spo_prog)
       button=st.form_submit_button('Next')
