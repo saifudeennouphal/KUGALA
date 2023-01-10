@@ -119,7 +119,7 @@ def register():
         ephone = st.text_input('Enter your contact number :',"")
         eothers = st.text_area('If others, Please specify')
         button=st.form_submit_button('Submit')
-        if button == True and sname=="" or sdept=="" or sphone=="":
+        if button == True and sname=="" or sdept=="" or sphone=="",eprogram=="SELECT":
           st.markdown('##### Please enter complete details!')
         else:
           lst=[artwork,ename,edept,ephone,eothers]
