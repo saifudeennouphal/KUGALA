@@ -51,7 +51,7 @@ def register():
     if button ==True and slct_evnt == "SELECT":
       st.markdown('##### Please select event!')  
     if slct_evnt == "Cultural":
-      st.info('This is a purely informational message', icon="ℹ️")
+      st.info('Sorry.. Registration for Cultural Program is Closed')
       #st.success = st.selectbox('Select your Programme ',cul_prog) 
       #cname = st.text_input('Enter your Name :', "")
       #cdept = st.selectbox('Select your Department :',departments)
