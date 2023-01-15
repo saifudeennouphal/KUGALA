@@ -40,7 +40,7 @@ def register():
                 'Department of Library and Information Science', 'Department of Philosophy', 'Department of Russian', 'Institute of English',
                 'Department of Archaeology', 'Department of Economics', 'Department of History', 'Department of Islamic and West Asian Studies',
                 'Department of Political Science','Department of Sociology', 'Department of Commerce', 'Department of Education',
-                'Department of Music', 'Department of Law']
+                'Department of Music', 'Department of Law','Institute of Management in Kerala']
     cul_prog = ['SELECT', 'Solo Dance','Group Dance', 'Classical Dance' ,'Song(Solo)', 'Song(Group)', 'Classical Music','Musical Instruments', 'Fashion Show']
     spo_prog = ['SELECT', 'Carroms(Doubles)', '5s Football', 'Badminton(Mixed Doubles)']
     exi_prog = ['SELECT', 'Artwork Exhibition', 'Department Exhibition']
@@ -51,18 +51,19 @@ def register():
     if button ==True and slct_evnt == "SELECT":
       st.markdown('##### Please select event!')  
     if slct_evnt == "Cultural":
-      cprogram = st.selectbox('Select your Programme ',cul_prog) 
-      cname = st.text_input('Enter your Name :', "")
-      cdept = st.selectbox('Select your Department :',departments)
-      cphone = st.text_input('Enter your contact number :',"")
-      citem = st.text_input('For classical dance/ Musical instruments please specify',"")
-      button=st.form_submit_button('Submit')
-      if button == True and cname=="" or cdept=="" or cphone=="" or citem=="SELECT" or cprogram=="SELECT":
-        st.markdown('##### Please enter complete details!')
-      else:
-        st.success('Hello you have successfully registered..')
-        lst=[cname,cdept,cphone,cprogram,citem]
-        registration(lst,'Sheet1')
+		st.info('This is a purely informational message', icon="ℹ️")
+	#st.success = st.selectbox('Select your Programme ',cul_prog) 
+      #cname = st.text_input('Enter your Name :', "")
+      #cdept = st.selectbox('Select your Department :',departments)
+      #cphone = st.text_input('Enter your contact number :',"")
+      #citem = st.text_input('For classical dance/ Musical instruments please specify',"")
+      #button=st.form_submit_button('Submit')
+      #if button == True and cname=="" or cdept=="" or cphone=="" or citem=="SELECT" or cprogram=="SELECT":
+        #st.markdown('##### Please enter complete details!')
+      #else:
+        #st.success('Hello you have successfully registered..')
+        #lst=[cname,cdept,cphone,cprogram,citem]
+        #registration(lst,'Sheet1')
 
     if slct_evnt == "Sports":
       sprogram = st.selectbox('Select your Sport ', spo_prog)
