@@ -39,6 +39,7 @@ st.markdown('#### Departmets Union  ')
 
 
 #register()
+tab1, tab2= st.tabs(["Event Wise Result","Leader Board"])
 
           
         
