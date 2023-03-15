@@ -35,7 +35,7 @@ def registration(lst):
 	os.remove('data.json')
 	
 	sh = gc.open_by_url(st.secrets['reg'])
-	ws = sh.worksheet('Sheet1')
+	ws = sh.worksheet('Sheet2')
 	
 	ws.insert_row(lst,2)
 	
