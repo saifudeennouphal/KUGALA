@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-     page_title="Campus Gala",
+     page_title="Arts festival",
      page_icon="ð§",
      layout="wide",
      menu_items={
