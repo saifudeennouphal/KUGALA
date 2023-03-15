@@ -32,7 +32,7 @@ st.image(image)
 
 st.markdown('#  കേട്ട കാലത്തിനോടുള്ള കലഹത്തിന്റെ കുത്ത്')
 
-st.markdown('#### Departmets Union | Researchers Union ')
+st.markdown('#### Departmets Union  ')
 
 
 
