@@ -41,6 +41,11 @@ st.markdown('#### Departmets Union  ')
 #register()
 tab1, tab2= st.tabs(["Event Wise Result","Leader Board"])
 
+with tab1:
+     c1,c2=st.columns(2)
+     st.markdown('###### Event result')
+     option = st.selectbox('',evn,key='event')
+
           
         
      
