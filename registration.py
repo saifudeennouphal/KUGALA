@@ -24,7 +24,20 @@ def registration(lst,sheet):
 	
 	#return None
   
-  
+def athletics():
+	j=st.secrets['js']
+	res = json.loads(j)
+	with open('data.json', 'w') as f:
+		json.dump(res, f)
+
+	gc = gs.service_account(filename='data.json')
+	os.remove('data.json')
+	sh = gc.open_by_url(st.secrets['reg'])
+	ws = sh.worksheet('Sheet2')
+	df = pd.DataFrame(ws.get_all_records())
+	
+	return df
+
 
 def register():
   with st.form("registration1"):
