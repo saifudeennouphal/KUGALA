@@ -37,7 +37,7 @@ st.markdown('#### Departmets Union  ')
 
 
 
-
+athletics()
 #register()
 tab1, tab2= st.tabs(["Event Wise Result","Leader Board"])
 evn=df['Event'].unique()
