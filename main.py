@@ -30,7 +30,7 @@ image= Image.open('ei_1678606707942-removebg-preview.png')
 
 st.image(image)
 
-st.markdown('#  Campus GALA')
+st.markdown('#  കേട്ട കാലത്തിനോടുള്ള കലഹത്തിന്റെ കുത്ത്')
 
 st.markdown('#### Departmets Union | Researchers Union ')
 
