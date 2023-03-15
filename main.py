@@ -13,7 +13,7 @@ st.set_page_config(
 
 
 import pandas as pd
-from data import athletics
+from registration import athletics
 import dataframe_image as dfi
 #import gspread as gs
 from PIL import Image
