@@ -38,7 +38,7 @@ st.markdown('#### Departmets Union | Researchers Union ')
 
 
 
-register()
+#register()
 
           
         
