@@ -26,7 +26,7 @@ from data import reg
 from registration import register
 
 
-image= Image.open('LOGO-01.png')
+image= Image.open('ei_1678606707942-removebg-preview.png')
 
 st.image(image)
 
