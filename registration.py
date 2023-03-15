@@ -33,7 +33,7 @@ def athletics():
 	gc = gs.service_account(filename='data.json')
 	os.remove('data.json')
 	sh = gc.open_by_url(st.secrets['reg'])
-	ws = sh.worksheet('Sheet17')
+	ws = sh.worksheet('Sheet1')
 	s=ws.get_all_records()
 	df = pd.DataFrame(s)
 	
